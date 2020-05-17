@@ -67,11 +67,4 @@ public class Main {
 
     }
 
-    public static boolean exampleSix () {
-        int[] arr6 = {1, 1, 1, 1};
-        int[] arr7 = {3, 1};
-        boolean sum;
-        if (arr6 == arr7)
-    }
-
 }
