@@ -12,11 +12,11 @@ public class Main {
         System.out.println("7. **** Написать метод, которому на вход подается одномерный массив и число n (может быть положительным, или отрицательным), при этом метод должен сместить все элементымассива на n позиций. Для усложнения задачи нельзя пользоваться вспомогательными массивами.");
 
 
-        System.out.println("Задание №1.");
+        System.out.println("\nЗадание №1.");
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < arr.length; i++) {
             arr[i] = arr[i] == 1 ? 0 : 1;
-            System.out.printf(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
 
         System.out.println("\n\nЗадание №2.");
@@ -24,7 +24,7 @@ public class Main {
         for (int i = 1, j = 0; i < arr2.length; i++) arr2[i] = j += 3;
         {
             for (int a : arr2) {
-                System.out.printf(a + " ");
+                System.out.print(a + " ");
             }
         }
 
@@ -34,17 +34,44 @@ public class Main {
             if (arr3[i] < 6) {
                 arr3[i] *= 2;
             }
-            System.out.printf(arr3[i] + " ");
+            System.out.print(arr3[i] + " ");
         }
 
         System.out.println("\n\nЗадание №4.");
         int[][] arr4 = new int[5][5];
         for (int i = 0; i < arr4.length; i++) {
             for (int j = 0, j2 = arr4[i].length; j < arr4[i].length; j++, j2--) {
-                if (i == j || i == (j2 - 1)) arr4[i][j] = 1;
+                if (i == j || i == (j2 - 1))
+                    arr4[i][j] = 1;
                 System.out.print(arr4[i][j] + " ");
             }
-            System.out.printf("\r\n");
+            System.out.print("\r\n");
         }
+
+        System.out.println("\r\nЗадача №5.");
+        int[] arr5 = {5, 23, 3, 4, 11, 6, 7, 58, 9, 10};
+        int max = arr5[0];
+        int min = arr5[0];
+        for (int i = 0; i < arr5.length; i++) {
+            if (max < arr5[i]) {
+                max = arr5[i];
+            }
+            if (arr5[i] < min) {
+                min = arr5[i];
+            }
+        }
+        System.out.println("Максимальное значение: " + max);
+        System.out.println("Минимальное значение: " + min);
+
+        System.out.println("\n\nЗадача №6.");
+
     }
+
+    public static boolean exampleSix () {
+        int[] arr6 = {1, 1, 1, 1};
+        int[] arr7 = {3, 1};
+        boolean sum;
+        if (arr6 == arr7)
+    }
+
 }
