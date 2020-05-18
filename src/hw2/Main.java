@@ -1,5 +1,7 @@
 package hw2;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -63,8 +65,5 @@ public class Main {
         System.out.println("Максимальное значение: " + max);
         System.out.println("Минимальное значение: " + min);
 
-        System.out.println("\n\nЗадача №6.");
-
     }
-
 }
